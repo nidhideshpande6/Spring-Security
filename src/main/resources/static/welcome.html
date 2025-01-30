@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <h1 th:text="${message}">Welcome to the Application!</h1>
+
+    <!-- Logout button (form) -->
+    <form action="/logout" method="POST">
+    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+    <button type="submit">Logout</button>
+</form>
+
+</body>
+</html>
